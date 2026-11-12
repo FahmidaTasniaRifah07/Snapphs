@@ -1,0 +1,11 @@
+#python generated files
+__pycache__/
+*.__pyc
+
+#virrtual environment
+.venv
+venv/
+
+#private database & credentials
+*.db 
+.env
