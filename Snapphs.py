@@ -160,8 +160,8 @@ def main():
            display_friends()
       elif choice == "3":
            name = input("Enter your friend's name: ")
-           email_ID1 = input("Enter new receiver email: ")
-           email_ID2 = input("Enter new sender email: ")
+           new_email1 = input("Enter new receiver email: ")
+           new_email2 = input("Enter new sender email: ")
            update_email(name, new_email1, new_email2)
       elif choice == "4":
            name = input("Enter your friend's name: ")
