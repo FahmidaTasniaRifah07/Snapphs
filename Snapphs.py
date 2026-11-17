@@ -146,30 +146,32 @@ def display_friends():
                    print("Message : " + friend["custom_text"])
 
 def main():
-      print("Welcome to Snapphs!")
-      print("1. Add friends")
-      print("2. Display friends")
-      print("3. Update email")
-      print("4. Delete friend")
-      print("5. Exit")
+      while True:
+          print("Welcome to Snapphs!")
+          print("1. Add friends")
+          print("2. Display friends")
+          print("3. Update email")
+          print("4. Delete friend")
+          print("5. Exit")
 
-      choice = input("Choose an option: ")
-      if  choice == "1":
-           add_friends()
-      elif choice == "2":
-           display_friends()
-      elif choice == "3":
-           name = input("Enter your friend's name: ")
-           new_email1 = input("Enter new receiver email: ")
-           new_email2 = input("Enter new sender email: ")
-           update_email(name, new_email1, new_email2)
-      elif choice == "4":
-           name = input("Enter your friend's name: ")
-           delete_friend(name)
-      elif choice == "5":
-           print("Goodbye!")
+          choice = input("Choose an option: ")
+          if  choice == "1":
+              add_friends()
+          elif choice == "2":
+              display_friends()
+          elif choice == "3":
+              name = input("Enter your friend's name: ")
+              new_email1 = input("Enter new receiver email: ")
+              new_email2 = input("Enter new sender email: ")
+              update_email(name, new_email1, new_email2)
+          elif choice == "4":
+              name = input("Enter your friend's name: ")
+              delete_friend(name)
+          elif choice == "5":
+              print("Goodbye!")
+              break
       else:
-           print("Invalid choice!")
+              print("Invalid choice!")
            
 
 
